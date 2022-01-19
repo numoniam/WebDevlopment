@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+            
+            <label>first name</label>
+            <input type="text" name="first name" id="fname"></br></br>
+            <lable>last name</lable>
+            <input type="text" name="last name" id="lname"></br></br>
+            <lable>marks</lable>
+            <input type="text" name="marks" id="marks"></br></br>
+            <button onclick="information()">click</button>
+            <script>
+                function information(){
+
+                    var first=document.getElementById("fname").value;
+                    var last=document.getElementById("lname").value;
+                    var m=document.getElementById("marks").value;
+                    var final_marks=parseInt(m);
+                    document.getElementById("a").innerHTML="welcome"+" "+first+" "+last;
+                    if(final_marks>80)
+                    {
+                        document.getElementById("a").innerHTML="you got A grade";
+                    }
+                    else if(final_marks<80)
+                    {
+                        document.getElementById("a").innerHTML="you got B grade";
+                    }
+                    else if(final_marks<40)
+                    {
+                        document.getElementById("a").innerHTML="you got c grade";
+                    }
+                   
+
+                }
+                
+            </script>
+            <p id="a"></p>
+            
+
+            
+    
+    </body>
+</html>

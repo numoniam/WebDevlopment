@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .s3{
+                width:100%;
+                height: 400px;
+                background-image:url("savan.jpg");
+                background-size:cover;
+                background-color: black;
+                
+            }
+            .s4{
+                height:400px;
+                width:100%;
+                /*for animation call frame*/
+                background-color:rgba(0,0,0,0,1);
+                animation-name:am1;
+                animation-duration:10s;
+                animation-duration:4s;
+                background-color:rgba(0,0,0,0);
+                
+                
+            }
+            /*animation class*/
+            @keyframes am1{
+                from{background-color:rgba(0,0,0,0.8);}
+                to{background-color:rgba(0,0,0,0);}
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="s3">
+            <div class="s4"></div>
+        </div>
+
+  
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .savan{
+                font-size:24px;
+                text-align:center;
+                color:blue;
+            }
+            .s1{
+                margin-left: 320px;
+            }
+        </style>
+        <script>
+            var size=20;
+            
+            function plus(){
+                size=size + 5;
+                document.getElementById("text").style.fontSize=size + "px";
+                
+            }
+            function min(){
+                size=size - 5;
+                document.getElementById("text").style.fontSize=size + "px";
+                
+            }
+        </script>
+
+    </head>
+    <body>
+        <p class="savan" id="text">HELLO ADIT</p>
+        <button class="s1" onclick="plus()">+</button>
+        <button onclick="min()"> -</button>
+
+    </body>
+</html>

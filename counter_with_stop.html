@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var count = 0;
+        function hello() {
+            document.getElementById("s1").innerHTML = count++;
+        }
+        var clock=setInterval(hello,1000);
+        function stop(){
+            
+            clearInterval(clock);
+
+        }
+    </script>
+    <style>
+        p {
+            display: grid;
+            place-items: center;
+            color: rgb(73, 97, 116);
+            font-size: 180px;
+            box-shadow: 5px rgb(71, 69, 69);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p id="s1"> </p>
+    
+    <button onclick="stop()">stop</button>
+
+
+
+</body>
+
+</html>

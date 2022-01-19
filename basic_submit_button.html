@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         </style>
+
+    </head>
+    <body>
+        
+        <script>
+            var click=0;
+        
+
+            function savan() {
+                //document.write("hello you click the button");
+                //document.getElementById("text").innerHTML=
+                click++;
+                if(click>1)
+                {
+                    document.getElementById("text").innerHTML="you have submitted  the form do not click again";
+                }
+            }
+        
+        </script>
+        <button onclick="savan()">click</button>
+        <p id="text"></p>
+    </body>
+</html>

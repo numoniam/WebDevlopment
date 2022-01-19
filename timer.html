@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stop Watch</title>
+        <Style>
+            .tbl{
+                position:absolute;
+                top: 20%;
+                left:35%;
+            }
+            .f1{
+                text-align: center;
+                font-size: 120px;
+                width: 160px;
+                color:rgb(164, 89, 199);
+            }
+        </Style>
+        <script>
+            var sec = 0;
+            var hour = 0;
+            var min = 0;
+            function time()
+            {
+               document.getElementById("s").innerHTML = sec;
+               document.getElementById("m").innerHTML = min;
+               document.getElementById("h").innerHTML = hour;
+
+               sec++;
+               if(sec == 60)
+               {
+                   if(min == 59)
+                   {
+                       hour++;
+                       min = 0;
+                       sec = 0;
+                   }
+                   else 
+                   {
+                       min++;
+                       sec = 0;
+                   }
+               }
+            }
+            setInterval(time,1000);
+        </script>
+    </head>
+    <body>
+        <table class="tbl">
+            <tr>
+                <td id="h" class="f1"></td>
+                <td id="m" class="f1"></td>
+                <td id="s" class="f1"></td>
+            </tr>
+        </table>
+    </body>
+</html>
